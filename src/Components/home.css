@@ -1,0 +1,26 @@
+.homePage {
+    text-align: center;
+    background-color: rgba(240, 170, 83, 0.76);
+    margin-bottom: 20px;
+    color: rgb(49, 7, 216);
+    font-size: large;
+    padding-bottom: 1px;
+}
+
+.proDuct {
+    text-align: center;
+}
+
+ul {
+    color: blue;
+    display: flex;
+    margin: auto;
+}
+
+.liC {
+    margin-right: 240px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    display: flex;
+}
