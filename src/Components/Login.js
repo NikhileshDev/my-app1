@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -14,7 +15,14 @@ const Login = () => {
 
   return (
     <div className='login'>
-      <img className='imgLogo' src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pj6Dwf_F7ucAjn7hRXhZsKvytaqdRZtPVA&s" alt='google-logo' />
+        <Link to='/'>
+          <img className='imgLogo' src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pj6Dwf_F7ucAjn7hRXhZsKvytaqdRZtPVA&s" alt='google-logo' />
+        </Link>
+
+      <div className='login_container'>
+        <h1>Sign In</h1>
+
+      
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email:</label>
@@ -38,6 +46,7 @@ const Login = () => {
         </div>
         <button type="submit">Sign-in</button>
       </form>
+      </div>
     </div>
   );
 };
@@ -114,3 +123,32 @@ export default Login;
 
 // export default Login
 
+
+
+// <form onSubmit={handleSubmit}>
+//         <div>
+//           <label htmlFor="email">Email:</label>
+//           <input
+//             type="email"
+//             id="email"
+//             value={email}
+//             onChange={(e) => setEmail(e.target.value)}
+//             required
+//           />
+//         </div>
+//         <div>
+//           <label htmlFor="password">Password:</label>
+//           <input
+//             type="password"
+//             id="password"
+//             value={password}
+//             onChange={(e) => setPassword(e.target.value)}
+//             required
+//           />
+//         </div>
+//         <button type="submit">Sign-in</button>
+//       </form>
+//       </div>
+//     </div>
+//   );
+// };
