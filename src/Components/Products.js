@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 const Products = () => {
-    const [selectedSize, setSelectedSize] = useState('S');
+
     const [selectedPrice, setSelectedPrice] = useState(899);
     const [selectedQty, setSelectedQty] = useState(1);
   
