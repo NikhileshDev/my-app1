@@ -15,7 +15,7 @@
     margin-left: auto; */
 }
 
-.login__container {
+.login_container {
     width: 300px;
     height: fit-content;
     display: flex;
